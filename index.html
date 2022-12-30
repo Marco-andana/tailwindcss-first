@@ -11,12 +11,19 @@
     <link rel="stylesheet" href="output.css">
     <script src="https://kit.fontawesome.com/afb5fbdd6d.js" crossorigin="anonymous"></script>
     <style>
+        * {
+            scroll-behavior: smooth;
+        }
         .gradient {
             background-image: linear-gradient(to bottom right, #4C51BF, #702459);
         }
 
         .gradient-skill {
             background-image: linear-gradient(#FC8181, #FED7D7);
+        }
+
+        .gradient-bottom {
+            background-image: linear-gradient(#4C51BF, #702459);
         }
     </style>
 </head>
@@ -59,7 +66,7 @@
         </nav>
 
     </section>
-    <section class="w-screen mx-auto py-4 gradient">
+    <section id="about" class="w-screen mx-auto py-4 gradient">
         <div class="px-16 py-8 text-center text-white">
             <h1 class="w-full text-5xl font-bold  ">About Me</h1>
             <div class="mb-4">
@@ -135,7 +142,7 @@
 
 
     </section>
-    <section class="container mx-auto py-4 bg-white px-4">
+    <section id="skill" class="container mx-auto py-4 bg-white px-4">
         <div class="flex flex-wrap">
             <div class="w-full md:w-4/12 ml-auto mr-auto px-4 mt-20">
                 <img src="img/img4.jpg" class="max-w-full rounded-lg shadow-lg">
@@ -144,7 +151,7 @@
                 <div class="md:pr-12">
                     <h1 class="w-full my-2 text-5xl font-bold text-center text-gray-700">Skill Framework</h1>
                     <div class="mb-4">
-                        <div class="h-1 mx-auto bg-pink-500 w-1/2 opacity-75 my-0 mx-0 rounded"></div>
+                        <div class="h-1 mx-auto bg-pink-500 w-1/2 opacity-75 my-0 rounded"></div>
                     </div>
                     <p class="mt-4 text-lg text-gray-600">Berikut adalah item dan skala keahlian untuk framework :</p>
                     <ul class="list-none mt-4">
@@ -169,9 +176,109 @@
         </div>
 
     </section>
-    <section class="w-screen mx-auto py-4 bg-gray-300 h-32 text-indigo-900 lg:text-green-700">Recent Work</section>
-    <section class="w-screen mx-auto py-4 bg-indigo-700 h-32">Contact Me</section>
-    <section class="w-screen mx-auto py-4 bg-white h-32">Footer</section>
+    <section id="recent" class="w-screen mx-auto py-8 bg-gray-200">
+        <div class="text-center mb-8">
+            <h1 class="w-full my-2 text-5xl font-bold text-gray-700">My Recent Work</h1>
+            <div class="mb-4">
+                <div class="h-1 mx-auto bg-pink-500 w-1/4 opacity-75 my-0 py-0 rounded"></div>
+            </div>
+            <p class="text-lg m-4 text-gray-600">Berikut adalah pekerjaan terbaru Saya : </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 m-8">
+            <div class="bg-white px-4 py-4 m-2 shadow-lg rounded">
+                <img src="img/img1.jpg" class="w-full rounded-lg">
+                <div class="px-2 py-2 text-center">
+                    <p class="font-bold text-xl mb-2 text-gray-700">Sistem Informasi Penelitian</p>
+                    <p class="text-gray-700 text-base">Sistem Informasi penelitian untuk dosen dan mahasiswa di Universitas A.</p>
+                </div>
+                <div class="px-2 py-4 text-center">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 shadow-md rounded-tr-lg rounded-bl-lg">Detail</button>
+                </div>
+            </div>
+            <div class="bg-white px-4 py-4 m-2 shadow-lg rounded">
+                <img src="img/img2.jpg" class="w-full rounded-lg">
+                <div class="px-2 py-2 text-center">
+                    <p class="font-bold text-xl mb-2 text-gray-700">Sistem Informasi Penelitian</p>
+                    <p class="text-gray-700 text-base">Sistem Informasi penelitian untuk dosen dan mahasiswa di Universitas A.</p>
+                </div>
+                <div class="px-2 py-4 text-center">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 shadow-md rounded-tr-lg rounded-bl-lg">Detail</button>
+                </div>
+            </div>
+            
+            <div class="bg-white px-4 py-4 m-2 shadow-lg rounded">
+                <img src="img/img4.jpg" class="w-full rounded-lg">
+                <div class="px-2 py-2 text-center">
+                    <p class="font-bold text-xl mb-2 text-gray-700">Sistem Informasi Keuangan</p>
+                    <p class="text-gray-700 text-base">Sistem Informasi keuangan untuk perusahaan X.</p>
+                </div>
+                <div class="px-2 py-4 text-center">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 shadow-md rounded-tr-lg rounded-bl-lg">Detail</button>
+                </div>
+            </div>
+
+            <div class="bg-white px-4 py-4 m-2 shadow-lg rounded">
+                <img src="img/img1.jpg" class="w-full rounded-lg">
+                <div class="px-2 py-2 text-center">
+                    <p class="font-bold text-xl mb-2 text-gray-700">Sistem Informasi Asset</p>
+                    <p class="text-gray-700 text-base">Sistem Informasi Asset untuk kota X</p>
+                </div>
+                <div class="px-2 py-4 text-center">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 shadow-md rounded-tr-lg rounded-bl-lg">Detail</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    </section>
+    <section id="contact" class="w-screen mx-auto py-4 gradient-bottom">
+        <h1 class="w-full my-2 text-5xl font-bold text-center text-white">Contact Me</h1>
+        <div class="mb-4">
+            <div class="h-1 mx-auto bg-pink-500 w-1/4 opacity-75 my-0 px-0 rounded"></div>
+        </div>
+        <div class="container p-4 mb-6 w-full lg:w-1/2 shadow-lg rounded-lg bg-gray-200 mx-auto">
+            <div class="p-5 lg:p-10 text-center">
+                <h4 class="text-2xl font-semibold">Contact me Here</h4>
+                <p class="mt-1 mb-4 text-gray-600">By filling this form</p>
+                <div class="w-full mb-4 mt-8">
+                    <label class="uppercase text-gray-600 text-xs font-bold">Nama Lengkap</label>
+                    <input type="text" class="mt-2 px-3 py-3 placeholder-gray-500 text-gray-600 bg-white rounded text-sm shadow w-full" placeholder="Nama Lengkap">
+                </div>
+
+                <div class="w-full mb-4 mt-4">
+                    <label class="uppercase text-gray-600 text-xs font-bold">Email</label>
+                    <input type="text" class="mt-2 px-3 py-3 placeholder-gray-500 text-gray-600 bg-white rounded text-sm shadow w-full" placeholder="Email">
+                </div>
+
+                <div class="w-full mb-4 mt-4">
+                    <label class="uppercase text-gray-600 text-xs font-bold">Pesan</label>
+                    <textarea rows="4" cols="80" class="mt-2 px-3 py-3 placeholder-gray-500 text-gray-600 bg-white rounded text-sm shadow w-full" placeholder="Tuliskan Pesan "></textarea>
+                </div>
+            <div class="mt-6">
+                <button class="bg-indigo-700 text-white text-sm font-bold uppercase px-6 py-3 rounded shadow hover:bg-indigo-900 hover:shadow-lg" type="button">Kirim Pesan</button>
+            </div>
+            </form>
+        </div>
+
+    </section>
+    <section class="w-screen mx-auto py-4 bg-white mt-3 mb-3">
+        <div class="text-center">
+            <a href="#" class="text-indigo-700 hover:text-indigo-900 p-2">
+                <i class="fa-2x fab fa-facebook"></i>
+            </a>
+            <a href="#" class="text-indigo-700 hover:text-indigo-900 p-2">
+                <i class="fa-2x fab fa-github"></i>
+            </a>
+            <a href="#" class="text-indigo-700 hover:text-indigo-900 p-2">
+                <i class="fa-2x fab fa-instagram"></i>
+            </a>
+        </div>
+        <div class="text-center mt-4 text-gray-600">
+            Design with Tailwindcdd
+        </div>
+    </section>
 
 </body>
 </html>
